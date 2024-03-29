@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    background-color: rgba(17, 17, 17, 1);
+    display: flex;
+    flex-direction: column;
+    font-family:"CormorantGaramond";
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+body {
+    background: url(./img/bgc.svg);
+    background-size:1920зч 1038px;
+    background-repeat: no-repeat;
+    color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
+}
+header {
+    width: 1280px;
+    margin: 30px auto;
+}
+nav {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+}
+nav a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-size: 18px;
+    transition: all .1s linear;
+}
+
+nav a:hover {
+    color:rgba(205, 170, 125, 1);
+    text-decoration: underline;
+}
+.instagram {
+    margin-right: 46px;
+}
+.logo {
+    margin: 0 40px;
+}
+.instagram:hover path {
+    stroke:rgba(205, 170, 125, 1);
+}
+.logo:hover path, .logo_menu:hover path {
+    fill:rgba(205, 170, 125, 1);
+}
+/* -----Выезжающее меню-------- */
+.nav_contact {
+    display: none;
+} 
+#menu:checked ~ .nav_contact {
+    transform: translate(0,0);
+}
+.nav_contact {
+    transform: translate(475px, 0); 
+    transition: all .5s ease;
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 1);
+    height: 100vh;
+    width: 475px;
+    background-color:rgba(17, 17, 17, 1);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    gap: 60px;
+    padding: 0 80px;
+    border-left: 1px solid rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+}
+.nav_contact label {
+    position: absolute;
+    top: 42px;
+    left: 82px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+.nav_contact label:hover path {
+    stroke: rgba(205, 170, 125, 1);
+}
+.nav_contact ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.nav_contact ul li:first-child {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+input {
+    display: none;
+}
+hr {
+    width: 1280px;
+    margin: auto;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 1);
+}
+
+/* ------------ Мэйн ------------*/
+main {
+    margin: auto;
+    width: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.first_screen {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.first_screen h1 {
+    font-weight: 700;
+    font-size:72px;
+    line-height: 86px;
+    color: white;
+    margin-top: 180px;
+}
+.scroll {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    bottom: 100px;
+}
+.scroll::before {
+    content: url(./img/Group\ 5.svg);
+}
+.second_screen {
+    height: 385px;
+    width: 856px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+blockquote {
+    color: white;
+    text-align: center;
+    width: 856px;
+    margin: auto;
+
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 35px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+blockquote::before {
+    content: url(./img/r.svg);
+    margin-bottom: 60px;
+    margin-top: 120px;
+}
+#service {
+    margin-top: 95px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 44px;
+    grid-row-gap: 146px;
+}
+#service img {
+    width: 396px;
+    height: 300px;
+}
+#service div::after {
+    content: "";
+    display: block;
+    width: 396px;
+    height: 300px;
+    position: absolute;
+    border: solid 1px rgba(205, 170, 125, 1);
+    transform: translate(20px, -340px);
+    z-index: -1;
+}
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 1 / 3 / 2 / 4; }
+.div4 { grid-area: 2 / 1 / 3 / 2; }
+.div5 { grid-area: 2 / 2 / 3 / 3; }
+.div6 { grid-area: 2 / 3 / 3 / 4; }
