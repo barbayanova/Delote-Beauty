@@ -211,7 +211,6 @@ blockquote::before {
 .div6 { grid-area: 2 / 3 / 3 / 4; }
 #service p {
     color:rgba(255, 255, 255, 1);
-    font-family: "Garamond";
     font-weight: 400;
     font-size: 30px;
     margin-top: 30px;
@@ -224,4 +223,48 @@ display: flex;
 width: 1286px;
 justify-content: space-around;
 opacity: 50%;
+}
+#our_works {
+    position: absolute;
+    top: 2832px;
+    color:rgba(255, 255, 255, 1);
+}
+#our_works ul {
+    display: flex;
+    width: 722px;
+    gap: 60px;
+    justify-content: center;
+    list-style: none;
+   font-size: 21px;
+   font-weight: 400;
+   margin-top: 80px;
+}
+#our_works ul li a {
+    text-decoration:none;
+    color: rgba(255, 255, 255, 1);
+}
+#our_works ul li a:hover {
+    text-decoration:underline;
+    color: rgba(205, 170, 125, 1);
+}
+h2 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 48px;
+    font-weight: 700;
+    font-family: "EB Garamond", serif;
+    line-height: 57.6px;
+    text-align: center;
+}
+.works {
+    position: absolute;
+    width: 1296px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    top: 3061px;
+}
+.works img {
+    width: 416;
+    height: 416px;
 }
