@@ -13,6 +13,8 @@ html, body {
     font-family: "Cormorant Garamond", serif;
     font-weight: 600;
     font-style: normal;
+    justify-content: center;
+    position: relative;
 }
 body {
     background: url(./img/bgc.svg);
@@ -110,6 +112,7 @@ hr {
     margin: auto;
     border-width: 1px;
     border-color: rgba(255, 255, 255, 1);
+    opacity: 50%;
 }
 
 /* ------------ Мэйн ------------*/
@@ -268,3 +271,29 @@ h2 {
     width: 416;
     height: 416px;
 }
+footer {
+    margin-top: 3130px;
+    color:rgba(255, 255, 255, 1);
+}
+#contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 313px;
+    width: 1296px;
+}
+#contacts ul li:first-child {
+    font-size: 24px;
+    font-family: "EB Garamond", serif;
+    line-height: 28.8px;
+    font-weight: 700;
+    list-style: none;
+}
+#contacts ul li {
+    font-size: 18px;
+    line-height: 23.4px;
+    font-weight: 400;
+    list-style: none;
+
+}
+
