@@ -19,10 +19,10 @@ body {
 
 body {
     background: url(./img/bgc.svg);
-    background-size: 1920зч 1038px;
+    background-size: auto;
     background-repeat: no-repeat;
     color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: color;
+    background-blend-mode: color; 
 }
 
 header {
@@ -275,22 +275,25 @@ blockquote::before {
     display: flex;
     width: 1286px;
     justify-content: space-around;
-    opacity: 50%;
-    transition: all 0.2s linear;
 }
-#cosmetics:hover {
+#cosmetics img {
+    opacity: 50%;
+}
+#cosmetics img:hover {
     opacity: 100;
+    transition: all .20s ease;
 }
 
 #our_works {
-    position: absolute;
-    top: 2832px;
+    margin-top: 150px;
     color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #our_works ul {
     display: flex;
-    width: 722px;
     gap: 60px;
     justify-content: center;
     list-style: none;
@@ -319,13 +322,17 @@ h2 {
 }
 
 .works {
-    position: absolute;
     width: 1296px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
-    top: 3061px;
+    margin-top: 55px;
+    margin-bottom: 100px;
+}
+.works img:hover {
+    transform: scale(1.5);
+    transition: all .20s ease;
 }
 
 .works img {
@@ -335,16 +342,16 @@ h2 {
 
 footer {
     color: rgba(255, 255, 255, 1);
-    position: absolute;
-    top: 5200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #contacts {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 313px;
-    width: 1296px;
+    padding: 80px 313px;
 }
 
 #contacts ul li:first-child {
