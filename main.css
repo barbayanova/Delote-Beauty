@@ -64,6 +64,7 @@ nav a:hover {
 .logo:hover path,
 .logo_menu:hover path {
     fill: rgba(205, 170, 125, 1);
+    transition: all .1s linear;
 }
 
 /* -----Выезжающее меню-------- */
@@ -171,7 +172,7 @@ main {
     align-items: center;
     gap: 20px;
     position: absolute;
-    top: 808px;
+    top: 750px;
 }
 
 @keyframes mouseAnimation {
@@ -368,3 +369,46 @@ footer {
     font-weight: 400;
     list-style: none;
 }
+/*-----------------page2_2-------------*/
+.masters {
+    display: grid;
+    grid-template-columns: repeat(3, 416px);
+    grid-template-rows: repeat(2, 595px);
+    grid-column-gap: 24px;
+    grid-row-gap: 60px;
+    z-index: 1;
+    margin-bottom: 100px;
+    }
+    
+    .m1 { grid-area: 1 / 1 / 2 / 2; }
+    .m2 { grid-area: 1 / 2 / 2 / 3; }
+    .m3 { grid-area: 1 / 3 / 2 / 4; }
+    .m4 { grid-area: 2 / 1 / 3 / 2; }
+    .m5 { grid-area: 2 / 2 / 3 / 3; }
+    .m6 { grid-area: 2 / 3 / 3 / 4; }
+    
+    .masters h2 {
+        color: rgba(255, 255, 255, 1);
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 700;
+        font-size: 27px;
+        text-align: left;
+    }
+    .masters p {
+        color: rgba(255, 255, 255, 1);
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: left;
+    }
+    .masters div::after {
+        content: "";
+        display: block;
+        width: 400px;
+        height: 477px;
+        position: absolute;
+        border: solid 1px rgba(205, 170, 125, 1);
+        transform: translate(16px, -590px);
+        opacity: 50%;
+        z-index: -1;
+    }
